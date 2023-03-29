@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Nukero](https://up.htmlacademy.ru/adaptive/28/user/2351661).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Тюлихова](https://htmlacademy.ru/profile/id523263).
 
 ---
 
