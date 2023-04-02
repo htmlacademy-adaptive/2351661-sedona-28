@@ -1,12 +1,127 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__body">
+    <header class="main-header">
+      <a href="#" class="main-header__logo">
+        <img src="" alt="" class="main-header__logo--image">
+      </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      <nav class="main-navigation">
+        <button type="button" class="main-navigation__burger">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
 
+        <nav class="main-navigation__list">
+          <a href="#" class="main-navigation__item main-navigation__item--active">Главная</a>
+          <a href="catalog.html" class="main-navigation__item">Фото и видео</a>
+          <a href="form.html" class="main-navigation__item">Форма отзыва</a>
+          <a href="#" class="main-navigation__item">HTML ACADEMY</a>
+        </nav>
+      </nav>
+    </header>
+    <main>
+      <article class="about">
+        <div class="background-wrapper">
+          <h1 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        </div>
+      </article>
+
+      <section class="features">
+        <p class="paragraph">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="title title--color">Настоящий городок</h3>
+            <span class="features__number features__number--display">№1</span>
+            <p class="paragraph paragraph--color">Седона не аттракциона для турстов, там течет своя жизнь</p>
+          </li>
+
+          <li class="features__item">
+            <img src="" alt="">
+          </li>
+
+          <li class="features__item features__item--apartaments">
+            <h3 class="title">Житье</h3>
+            <p class="paragraph">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+
+          <li class="features__item features__item--food">
+            <h3 class="title">Еда</h3>
+            <p class="paragraph">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+
+          <li class="features__item features__item--souvenir">
+            <h3 class="title">Сувениры</h3>
+            <p class="paragraph">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="features__item">
+            <img src="" alt="">
+          </li>
+
+          <li class="features__item">
+             <h3 class="title title--color">Там есть мост дьявола</h3>
+            <span class="features__number features__number--display">№2</span>
+            <p class="paragraph paragraph--color">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </li>
+          <li class="features__item">
+            <h3 class="title">Небольшая площадь</h3>
+            <span class="features__number features__number--display">№3</span>
+            <p class="paragraph">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="features__item">
+            <h3 class="title">Красивая дорога</h3>
+            <span class="features__number features__number--display">№4</span>
+            <p class="paragraph">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="title">Мало туристов</h3>
+            <span class="features__number features__number--display">№5</span>
+            <p class="paragraph">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="location">
+        <strong class="location__title">Заинтересовались?</strong>
+        <p class="paragrath">Укажите предполагамые даты поездки, и мы покажем вам лучшие предожения гостиниц в седоне</p>
+        <button class="button">Найти гостиницу</button>
+
+
+
+        <div class="map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A1e73bbf80e48b31ac4ac2fb1bd4085ce246a032cc59fe7c2805585af93ec4b07&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <b class="footer-hashtag">#VISITSEDONA</b>
+
+      <ul class="link-list">
+        <li class="link__item link__item--vk">
+          <span class="visually-hidden">vk</span>
+        </li>
+
+        <li class="link__item link__item--telegram">
+          <span class="visually-hidden">telegram</span>
+        </li>
+
+        <li class="link__item link__item--youtube">
+          <span class="visually-hidden">youtube</span>
+        </li>
+      </ul>
+
+      <b class="footer__copyright footer__copyright--icon">
+        Разработано
+      </b>
+    </footer>
   </body>
 </html>
