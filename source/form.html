@@ -12,8 +12,8 @@
 </head>
 <body class="page__body">
   <header class="main-header">
-      <a href="#" class="main-header__logo">
-        <img src="" alt="" class="main-header__logo--image">
+      <a href="index.html" class="main-header__logo">
+         <img src="img/logo.png" width="185px" height="96px" alt="Логотип">
       </a>
 
       <nav class="main-navigation">
@@ -30,12 +30,19 @@
       </nav>
     </header>
     <main>
-      <article class="about">
-    <div class="background-wrapper background-wrapper--extra">
-      <h1 class="title">Оставьте свой отзыв<h1>
-      <p class="pharagrath">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </div>
-    </article>
+     <section class="about">
+        <div class="about__background-wrapper">
+
+          <img src="img/sedona.svg" width="282px" height="49px">
+        </div>
+
+        <div class="about__describe">
+        <h1 class="title">Оставьте свой отзыв</h1>
+        <p class="paragraph">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+
+      </section>
+
 
       <section class="form">
         <form method="get" action="https://htmlacademy.ru">
@@ -50,13 +57,13 @@
                 <input class="formtext-list__bar" type="text" name="name" id="name" value="Пётр" required>
               </li>
 
-              <li class="fullname__item">
+              <li class="formtext-list__item">
                 <label class="paragraph" for="surname">Фамилия*:</label>
                 <input class="formtext-list__bar" type="text" name="surname" id="surname" value="Пустота" required>
                 </li>
 
                 </li>
-              <li class="fullname__item">
+              <li class="formtext-list__item">
                 <label class="paragraph" for="patronymic">Отчество*:</label>
                 <input class="formtext-list__bar" type="text" name="patronymic" id="patronymic" value="Викторович" required>
               </li>
@@ -134,37 +141,41 @@
     <footer class="footer">
       <b class="footer-hashtag">#VISITSEDONA</b>
 
-      <ul class="link-list">
-        <li class="link__item link__item--vk">
-          <span class="visually-hidden">vk</span>
+     <ul class="link">
+        <li class="link__item">
+          <a class="link__social link__social--vk" href="https://vk.com/htmlacademy"></a>
         </li>
 
-        <li class="link__item link__item--telegram">
-          <span class="visually-hidden">telegram</span>
+        <li class="link__item">
+          <a class="link__social link__social--tg" href="https://t.me/htmlacademy"></a>
         </li>
 
-        <li class="link__item link__item--youtube">
-          <span class="visually-hidden">youtube</span>
+        <li class="link__item">
+          <a class="link__social link__social--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
         </li>
       </ul>
 
+     <div class="footer__wrapper">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__icon">
       <b class="footer__copyright footer__copyright--icon">
         Разработано
       </b>
-    </footer>
+        <img src="img/htmlacademy.svg" width="27px" height="34px" alt="">
+        </a>
+      </div>
 
 
 
     <div class="modal-wrong">
       <strong class="title">Что-то пошло не так!</strong>
       <p class="pharagraph">ЧТО-ТО ПОШЛО НЕ ТАК! Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="button">ОК</button>
+      <button type="button" class="button">ОК</button>
     </div>
 
     <div class="modal-accept">
       <strong class="title">Ваш отзыв отправлен</strong>
       <p class="pharagraph">Ваш отзыв отправлен!Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="button">ЗАКРЫТЬ ОКНО</button>
+      <button type="button" class="button">ЗАКРЫТЬ ОКНО</button>
     </div>
 </body>
 </html>

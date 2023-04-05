@@ -11,8 +11,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="#" class="main-header__logo">
-        <img src="" alt="" class="main-header__logo--image">
+      <a href="index.html" class="main-header__logo">
+        <img src="img/logo.png" width="185px" height="96px" alt="Логотип">
       </a>
 
       <nav class="main-navigation">
@@ -29,80 +29,93 @@
       </nav>
     </header>
     <main>
-      <article class="about">
-      <div class="background-wrapper background-wrapper--extra">
-      <h1 class="title">Фото и видео</h1>
-      <p class="pharagrath">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-    </div>
-  </article>
+      <section class="about">
+        <div class="about__background-wrapper">
+
+          <img src="img/sedona.svg" width="282px" height="49px">
+        </div>
+
+        <div class="about__describe">
+        <h1 class="title">Фото и видео!</h1>
+        <p class="paragraph">Фото и видеоНе можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+
+      </section>
 
     <article class="photos">
 
-      <ul class="photos-list">
+      <ul class="photos__list">
         <li class="photos__item">
-          <img src="" alt="">
+          <a  href="#" class="photos__link">
+          <img src="img/widespace.jpg" width="280px" height ="280px" alt="">
+        </a>
 
-          <div class="photos-info photos-info--position">
+          <div class="photos__info">
 
-            <div class="photos-author">
+            <div class="photos___author">
               <h3 class="title">Народные просторы</h3>
               <b class="pharagraph">Автор фото: Борис</b>
             </div>
 
-            <div class="photos-likes">
-              <span class="title photos-likes--icon">1350</span>
-            </div>
+
+              <span class="photos__likes">1350</span>
           </div>
         </li>
 
 
         <li class="photos__item">
-          <img src="" alt="">
+          <a href="#"  class="photos__link">
+          <img src="img/herb.jpg" width="280px" height="280px" alt="">
+        </a>
 
-          <div class="photos-info photos-info--position">
+          <div class="photos__info">
 
-            <div class="photos-author">
+            <div class="photos__author">
               <h3 class="title">Местная растительность</h3>
               <b class="pharagraph">Автор фото: Сергей</b>
             </div>
 
-            <div class="photos-likes">
-              <span class="title photos-likes--icon">143</span>
-            </div>
+
+              <span class="photos__likes">143</span>
+
           </div>
         </li>
 
 
         <li class="photos__item">
-          <img src="" alt="">
+          <a href="#"  class="photos__link">
+          <img src="img/northway.jpg" width="280px" height="280px" alt="">
+        </a>
 
-          <div class="photos-info photos-info--position">
+          <div class="photos__info">
 
-            <div class="photos-author">
+            <div class="photos__author">
               <h3 class="title">Дорога на север</h3>
               <b class="pharagraph">Автор фото: Петр</b>
             </div>
 
-            <div class="photos-likes">
-              <span class="title photos-likes--icon">96</span>
-            </div>
+
+              <span class="photos__likes">96</span>
+
           </div>
         </li>
 
 
         <li class="photos__item">
-          <img src="" alt="">
+          <a href="#" class="photos__link">
+          <img src="img/bridge.jpg" width="280x" height="280px" alt="">
+        </a>
 
-          <div class="photos-info photos-info--position">
+          <div class="photos__info">
 
-            <div class="photos-author">
+            <div class="photos__author">
               <h3 class="title">Мост дьявола</h3>
               <b class="pharagraph">Автор фото: Антон</b>
             </div>
 
-            <div class="photos-likes">
-              <span class="title photos-likes--icon">254</span>
-            </div>
+
+              <span class="photos__likes">254</span>
+
           </div>
         </li>
       </ul>
@@ -111,29 +124,39 @@
     <section class="attraction">
       <strong class="title">Все еще сомневаетесь?</strong>
       <p class="pharagraph">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <video src="../video/9IXCnWc.mp4" controls width="280" height="177"></video>
+      <article class="player">
+        <img src="img/player.jpg" width="280px" height="177px" alt="Видео плеер" class="player__content">
+        <button type="button"></button>
+      </article>
     </section>
     </main>
     <footer class="footer">
-      <b class="footer-hashtag">#VISITSEDONA</b>
+      <b class="footer__hashtag">#VISITSEDONA</b>
 
-      <ul class="link-list">
-        <li class="link__item link__item--vk">
-          <span class="visually-hidden">vk</span>
+      <ul class="link">
+        <li class="link__item">
+          <a class="link__social link__social--vk" href="https://vk.com/htmlacademy"></a>
         </li>
 
-        <li class="link__item link__item--telegram">
-          <span class="visually-hidden">telegram</span>
+        <li class="link__item">
+          <a class="link__social link__social--tg" href="https://t.me/htmlacademy"></a>
         </li>
 
-        <li class="link__item link__item--youtube">
-          <span class="visually-hidden">youtube</span>
+        <li class="link__item">
+          <a class="link__social link__social--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
         </li>
       </ul>
 
+
+      <div class="footer__wrapper">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__icon">
       <b class="footer__copyright footer__copyright--icon">
         Разработано
       </b>
+        <img src="img/htmlacademy.svg" width="27px" height="34px" alt="">
+        </a>
+      </div>
+
     </footer>
  </body>
  </html>

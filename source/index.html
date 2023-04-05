@@ -11,8 +11,8 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a href="#" class="main-header__logo">
-        <img src="" alt="" class="main-header__logo--image">
+      <a class="main-header__logo">
+         <img src="img/logo.png" width="185px" height="96px" alt="Логотип">
       </a>
 
       <nav class="main-navigation">
@@ -29,15 +29,22 @@
       </nav>
     </header>
     <main>
-      <article class="about">
-        <div class="background-wrapper">
-          <h1 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <section class="about">
+        <div class="about__background-wrapper">
+          <img src="img/group.svg" width="115px" height="28px" alt="">
+          <img src="img/tothe.svg" width="107px" height="18px" alt="">
+          <img src="img/sedona.svg" width="282px" height="49px" alt="">
+          <img src="img/reason/svg" width="60px" height="24px" alt="">
         </div>
-      </article>
+
+        <div class="about__describe">
+        <h1 class="title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="paragraph">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
+      </div>
+
+      </section>
 
       <section class="features">
-        <p class="paragraph">Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</p>
-
         <ul class="features__list">
           <li class="features__item">
             <h3 class="title title--color">Настоящий городок</h3>
@@ -93,7 +100,7 @@
       <section class="location">
         <strong class="location__title">Заинтересовались?</strong>
         <p class="paragrath">Укажите предполагамые даты поездки, и мы покажем вам лучшие предожения гостиниц в седоне</p>
-        <button class="button">Найти гостиницу</button>
+        <button type="button" class="button">Найти гостиницу</button>
 
 
 
@@ -105,23 +112,28 @@
     <footer class="footer">
       <b class="footer-hashtag">#VISITSEDONA</b>
 
-      <ul class="link-list">
-        <li class="link__item link__item--vk">
-          <span class="visually-hidden">vk</span>
+      <ul class="link">
+        <li class="link__item">
+          <a class="link__social link__social--vk" href="https://vk.com/htmlacademy"></a>
         </li>
 
-        <li class="link__item link__item--telegram">
-          <span class="visually-hidden">telegram</span>
+        <li class="link__item">
+          <a class="link__social link__social--tg" href="https://t.me/htmlacademy"></a>
         </li>
 
-        <li class="link__item link__item--youtube">
-          <span class="visually-hidden">youtube</span>
+        <li class="link__item">
+          <a class="link__social link__social--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
         </li>
       </ul>
 
+      <div class="footer__wrapper">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__icon">
       <b class="footer__copyright footer__copyright--icon">
         Разработано
       </b>
+        <img src="img/htmlacademy.svg" width="27px" height="34px" alt="">
+        </a>
+      </div>
     </footer>
   </body>
 </html>
