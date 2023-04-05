@@ -10,6 +10,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint .",
+     "files.insertFinalNewline": true,
     "lint": "npm run editorconfig",
     "build": "echo 'Build task'",
     "start": "echo 'Start task'"
