@@ -1,0 +1,13 @@
+@use "../global.scss" as *;
+
+.title {
+  @include font-weight-bold;
+
+  &--color {
+  color: #ffffff;
+  }
+
+  &--uppercase-off {
+  text-transform: none;
+  }
+}

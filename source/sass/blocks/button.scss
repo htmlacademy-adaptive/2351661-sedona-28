@@ -1,0 +1,28 @@
+@use "../global.scss" as *;
+
+.button {
+  background-color: $lightblue;
+  padding: 16px 49px;
+
+  font-family: PT Sans, sanf-serif;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+
+  border: none;
+
+  &:hover {
+    background-color: #669EC0;
+  }
+
+  &:active {
+  background-color: #5496BD;
+  color: rgba(#ffffff,.3);
+  }
+
+  &:disabled {
+  background-color: #E5E5E5;
+  }
+}

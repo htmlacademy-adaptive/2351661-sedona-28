@@ -1,0 +1,28 @@
+@use "../global.scss" as *;
+
+.link {
+  margin: 0;
+  padding: 0;
+
+  width: 156px;
+  list-style: none;
+}
+
+.link__template {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link__social {
+  display: inline-block;
+  background-color: $lightblue;
+  padding: 24px;
+
+  &:hover {
+  background-color: #669EC0;
+  }
+
+  &:active {
+  background-color: #5496BD;
+  }
+}

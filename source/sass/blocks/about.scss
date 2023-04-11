@@ -1,0 +1,30 @@
+@use "../global.scss" as *;
+
+.about__background-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  background: url("../../img/back-mobile.jpg") no-repeat 50% 50%;
+  height: 400px;
+
+  margin-bottom: 32px;
+}
+
+.about__where {
+  margin-bottom: 31px;
+}
+
+.about__sedona {
+  margin-bottom: 38px;
+}
+
+.about__describe  {
+  text-align: center;
+}
+
+.about__title {
+  margin-bottom: 35px;
+}
