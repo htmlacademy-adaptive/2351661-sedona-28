@@ -1,0 +1,22 @@
+@use "../global.scss" as *;
+
+.photos {
+
+}
+
+.photos__list {
+  margin: 0;
+  padding: 0;
+}
+
+.photos__title {
+  font-family: PT Sans, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.paragraph--uppercase {
+  text-transform: none;
+}

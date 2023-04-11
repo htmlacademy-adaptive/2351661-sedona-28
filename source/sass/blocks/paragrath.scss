@@ -1,0 +1,24 @@
+@use "../global.scss" as *;
+
+.location {
+  text-align: center;
+}
+
+.paragraph {
+  @include font-weight-thin;
+
+  &--color {
+  color: #ffffff;
+  }
+
+  &--uppercase {
+  text-transform: none;
+  }
+}
+
+
+.photos__likes {
+  @include font-weight-bold;
+  font-size: 14px;
+  line-height: 21px;
+}

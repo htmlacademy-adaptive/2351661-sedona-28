@@ -1,0 +1,14 @@
+@use "../global.scss" as *;
+
+.location__wrapper {
+  padding-top: 36px;
+  padding-bottom: 49px;
+}
+
+.location__title {
+  font-family: PT Sans, sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  font-height: 26px;
+  text-transform: uppercase;
+}

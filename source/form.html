@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="normalize.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -13,7 +12,7 @@
 <body class="page__body">
   <header class="main-header">
       <a href="index.html" class="main-header__logo">
-         <img src="img/logo.png" width="185px" height="96px" alt="Логотип">
+          <img src="img/logo.png" width="185px" height="96px" alt="Логотип">
       </a>
 
       <nav class="main-navigation">
@@ -22,15 +21,24 @@
         </button>
 
         <nav class="main-navigation__list">
-          <a href="index.html" class="main-navigation__item">Главная</a>
-          <a href="catalog.html" class="main-navigation__item">Фото и видео</a>
-          <a href="#" class="main-navigation__item main-navigation__item--active">Форма отзыва</a>
+          <li class="main-navigation__element">
+            <a href="index.html" class="main-navigation__item
+          main-navigation__item--active">Главная</a>
+          </li>
+          <li class="main-navigation__element">
+            <a href="catalog.html" class="main-navigation__item">Фото и видео</a>
+          </li>
+          <li class="main-navigation__element">
+            <a href="form.html" class="main-navigation__item">Форма отзыва</a>
+          </li>
+          <li class="main-navigation__element">
           <a href="#" class="main-navigation__item">HTML ACADEMY</a>
+          </li>
         </nav>
       </nav>
     </header>
     <main>
-     <section class="about">
+      <section class="about">
         <div class="about__background-wrapper">
 
           <img src="img/sedona.svg" width="282px" height="49px">
@@ -49,7 +57,7 @@
 
 
           <fieldset class="form__item">
-            <legend class="title">Представьтесь</legend>
+            <legend class="title">Представьтесь:</legend>
 
             <ul class="formtext-list">
               <li class="formtext-list__item">
@@ -74,7 +82,7 @@
             <legend class="title">Контактная информация</legend>
               <ul class="formtext-list">
                 <li class="formtext-list__item">
-                  <label for="phone">Контактный телефон*:</label>
+                  <label for="paragraph">Контактный телефон*:</label>
                   <input class="formtext-list__bar formtext-list__bar--phone" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
                 </li>
 
@@ -86,52 +94,52 @@
           </fieldset>
 
           <fieldset class="form__item">
-            <legend class="title">Ваше общее впечатление:</legend>
+            <legend class="title form__item-title">Ваше общее впечатление:</legend>
 
             <ul class="radio-list">
               <li class="radio-list__item">
                 <input class="radio-list__button" type="radio" name="impression" value="positive" id="positive" checked>
-                <label class="title" for="positive">Скорее положительное</label>
+                <label class="title title--uppercase-off radio-list__icon" for="positive">Скорее положительное</label>
               </li>
 
               <li class="radio-list__item">
                 <input class="radio-list__button" type="radio" name="impression" value="negative" id="negative">
-                <label class="title" for="negative">Скорее отрицательное</label>
+                <label class="title title--uppercase-off radio-list__icon" for="negative">Скорее отрицательное</label>
               </li>
 
               <li class="radio-list__item">
                 <input class="radio-list__button" type="radio" name="impression" value="unknown" id="unknown">
-                <label class="title" for="unknown">Затрудняюсь ответить</label>
+                <label class="title title--uppercase-off radio-list__icon" for="unknown">Затрудняюсь ответить</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form__item">
-            <legend class="title">Посещенные достопримечательности:</legend>
+            <legend class="title form__item-title">Посещенные достопримечательности:</legend>
             <ul class="check-list">
               <li class="check-list__item">
-                <input class="check-list__item" type="checkbox" name="place" id="devilsbridge" value="devilsbridge" checked>
-                <label for="devilsbridge" class="title">Мост Дьявола</label>
+                <input class="check-list__element" type="checkbox" name="place" id="devilsbridge" value="devilsbridge" checked>
+                <label for="devilsbridge" class="title title--uppercase-off check-list__item-icon">Мост Дьявола</label>
               </li>
 
               <li class="check-list__item">
-                <input class="check-list__item" type="checkbox" name="place" id="mountbell" value="mountbell" checked>
-                <label for="mountbell" class="title">Гора-Колокол</label>
+                <input class="check-list__element" type="checkbox" name="place" id="mountbell" value="mountbell" checked>
+                <label for="mountbell" class="title title--uppercase-off check-list__item-icon">Гора-Колокол</label>
               </li>
               <li class="check-list__item">
-                <input class="check-list__item" type="checkbox" name="place" id="slidepark" value="slidepark" checked>
-                <label for="slidepark" class="title">Слайд-парк</label>
+                <input class="check-list__element" type="checkbox" name="place" id="slidepark" value="slidepark" checked>
+                <label for="slidepark" class="title title--uppercase-off check-list__item-icon">Слайд-парк</label>
               </li>
               <li class="check-list__item">
-                <input class="check-list__item" type="checkbox" name="place" id="redcrags" value="redcrags">
-                <label for="redcrags" class="title">Красные скалы</label>
+                <input class="check-list__element" type="checkbox" name="place" id="redcrags" value="redcrags">
+                <label for="redcrags" class="title title--uppercase-off check-list__item-icon">Красные скалы</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form__item">
-            <legend class="title">Опишите свои эмоции</legend>
-            <textarea name="comment" id="" cols="39" rows="10" placeholder="Опишите подробно все свои эмоции" ></textarea>
+            <legend class="title">Опишите свои эмоции:</legend>
+            <textarea class="comment" name="comment" placeholder="Опишите подробно все свои восторги" ></textarea>
           </fieldset>
           <input class="button" type="submit" value="Отправить отзыв">
           <span class="pharagraph pharagraph--required">*- Обязательные поля</span>
@@ -141,7 +149,7 @@
     <footer class="footer">
       <b class="footer-hashtag">#VISITSEDONA</b>
 
-     <ul class="link">
+      <ul class="link">
         <li class="link__item">
           <a class="link__social link__social--vk" href="https://vk.com/htmlacademy"></a>
         </li>
@@ -155,12 +163,13 @@
         </li>
       </ul>
 
-     <div class="footer__wrapper">
+      <div class="footer__wrapper">
         <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__icon">
       <b class="footer__copyright footer__copyright--icon">
         Разработано
       </b>
-        <img src="img/htmlacademy.svg" width="27px" height="34px" alt="">
+        <svg class="footer__logo" width="28" height="35" viewBox="0 0 28 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill="currentColor" d="M14.3332 0.450012H14.2332L0.733154 1.85001V26.55L14.2332 34.55L27.6332 26.55V1.85001L14.3332 0.450012ZM25.7332 12.55L14.2332 5.75001V5.65001H14.1332L14.0332 5.55001V5.65001L2.63315 12.55V3.55001L14.1332 2.35001L25.7332 3.55001V12.55ZM14.1332 7.25001L25.6332 13.95L21.1332 16.55L14.0332 12.35V13.75L19.9332 17.25L19.0332 17.75L14.0332 14.75V16.15L17.8332 18.45L17.0332 18.95L14.0332 17.15V18.55L15.9332 19.65L14.1332 20.75L2.73315 14.05L14.1332 7.25001ZM2.63315 15.55L14.0332 22.35V23.35L6.13315 18.65V20.05L14.1332 24.85V25.95L6.13315 21.25V22.65L14.1332 27.45L22.2332 22.55V17.35L25.6332 15.35V25.35L14.1332 32.25L2.63315 25.45V15.55Z"/>
         </a>
       </div>
 
