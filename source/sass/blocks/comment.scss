@@ -1,0 +1,16 @@
+@use "../global.scss" as *;
+
+.comment {
+  box-sizing: border-box;
+  padding: 16px;
+
+  width: 280px;
+  height: 150px;
+  resize: none;
+
+  &::placeholder {
+  @include font-weight-bold;
+  text-transform: none;
+  color: transparentize(#000000, 0.6);
+  }
+}

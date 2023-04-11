@@ -1,0 +1,79 @@
+@use "../global.scss" as *;
+
+.radio-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.form__item-title {
+  text-align: center;
+}
+
+.radio-list__item {
+  position: relative;
+  margin-left: 62px;
+
+  margin-bottom: 26px;
+}
+
+.radio-list__button {
+  -webkit-appearance: none;
+  appearance: none;
+
+  position: absolute;
+}
+
+.radio-list__icon::before {
+  content: "";
+  display: block;
+
+  width: 46px;
+  height: 46px;
+
+  background-color: #f2f2f2;
+  border-radius: 50%;
+
+  position: absolute;
+
+  left: -62px;
+  top: -7px;
+
+}
+
+.radio-list__icon {
+  &:hover::before {
+  background-color: #e5e5e5;
+  }
+}
+
+
+.radio-list__icon::after {
+  content: "";
+  display: block;
+
+  width: 16px;
+  height: 16px;
+
+  background-color: #333333;
+  border-radius: 50%;
+
+  position: absolute;
+  left: -47px;
+  top:  8px;
+
+  opacity: 0;
+}
+
+.radio-list__button:checked + .radio-list__icon::after {
+  opacity: 1;
+}
+
+.radio-list__button:disabled + .radio-list__icon::before{
+  background-color: #D5D5D5;
+}
+
+.radio-list__button:disabled + .radio-list__icon::after {
+  background-color: rgba(#000000, 0.3);
+}

@@ -1,0 +1,47 @@
+@use "../global.scss" as *;
+
+.form {
+
+}
+
+.form__item {
+  border: none;
+}
+
+
+.formtext-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.formtext-list__bar {
+  box-sizing: border-box;
+
+  padding: 16px;
+  width: 280px;
+  height: 58px;
+
+  background-color: #f2f2f2;
+  border: none;
+
+
+  @include font-weight-bold;
+  text-transform: none;
+
+  &::placeholder {
+  color: rgba(#f2f2f2, 0.3);
+  }
+
+  &:hover {
+  background-color: #E5E5E5;
+  }
+
+  &:active {
+  background-color: #ffffff;
+  outline: none;
+  border: 4px solid #e5e5e5;
+  }
+}

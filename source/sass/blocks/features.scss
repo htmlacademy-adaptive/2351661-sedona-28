@@ -1,0 +1,48 @@
+@use "../global.scss" as *;
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  text-align: center;
+}
+
+.features__item {
+  padding-top: 52px;
+  padding-bottom: 31px;
+  padding-left: 33px;
+  padding-right: 33px;
+  background-color: #EEEEEE;
+
+  &--background-color {
+  background-color: $lightblue;
+  }
+
+  &--apartaments {
+  background-color: #ffffff;
+  }
+
+  &--food {
+  background-color: #ffffff;
+  }
+
+  &--souvenir {
+  background-color: #ffffff;
+  }
+
+}
+
+
+.features__number {
+  font-family: PT Sans, sans-serif;
+  display: block;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 27px;
+  color: #ffffff;
+
+  &--color {
+   color: #333333;
+  }
+}
